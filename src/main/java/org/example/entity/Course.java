@@ -23,7 +23,7 @@ public class Course {
         return courseID;
     }
 
-    public void setCourseName(String Name) {
+    public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
 

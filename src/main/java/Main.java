@@ -12,21 +12,21 @@ public class Main {
     public static void main(String[] args) {
 
 
-        StudentRegistration studentRegis = new StudentRegistration();
-        CourseRegistration courseRegis = new CourseRegistration();
+        StudentRegistration studentRegistrar = new StudentRegistration();
+        CourseRegistration courseRegistrar = new CourseRegistration();
 
-        Student stud1 = new Student(2022317151, "John Doe", "Information Technology");
-        Student stud2 = new Student(2022317159, "Jane Doe", "Information Technology");
+        Student student1 = new Student(180705, "John Doe", "Information Technology");
+        Student student2 = new Student(030306, "Jane Doe", "Information Technology");
 
-        studentRegis.saveStudent(stud3);
-        studentRegis.saveStudent(stud4);
+        studentRegistrar.saveStudent(student1);
+        studentRegistrar.saveStudent(student2);
 
-        studentRegis.displayAllStudent();
+        studentRegistrar.displayAllStudent();
 
-        Course c1 = new Course(0001, "Integrative Programming", "Information Technology");
-        courseRegis.save(c1);
+        Course cor1 = new Course(00011, "Integrative Programming", "Information Technology");
+        courseRegistrar.save(cor1);
 
-        courseRegis.displayAll();
+        courseRegistrar.displayAll();
 
 
 

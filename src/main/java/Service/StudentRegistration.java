@@ -15,7 +15,7 @@ public class StudentRegistration {
 
     public void updateStudent(Student student){
         for (int i = 0; i < studentLists.size(); i++){
-            if (studentLists.get(i).getstudentID() == student.getstudentID()){
+            if (studentLists.get(i).getStudentID() == student.getStudentID()){
                 studentLists.set(i,student);
                 break;
             }
@@ -24,7 +24,7 @@ public class StudentRegistration {
 
     public void removeStudent (Student student){
         for (int i = 0; i < studentLists.size(); i++){
-            if(studentLists.get(i).getstudentID() == student.getstudentID()){
+            if(studentLists.get(i).getStudentID() == student.getStudentID()){
                 studentLists.remove(i);
                 break;
             }
@@ -33,9 +33,9 @@ public class StudentRegistration {
 
     public void displayAllStudent(){
         for (Student s: studentLists){
-            System.out.println("Student ID: " + s.getstudentID());
-            System.out.println("Student Name: " + s.getstudentName());
-            System.out.println("Program: " + s.getprogram());
+            System.out.println("Student ID: " + s.getStudentID());
+            System.out.println("Student Name: " + s.getStudentName());
+            System.out.println("Program: " + s.getProgram());
             System.out.println();
         }
     }

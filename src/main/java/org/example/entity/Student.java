@@ -19,15 +19,15 @@ public class Student {
         this.studentID=studentID;
     }
 
-    public int getstudentID(){
+    public int getStudentID(){
         return studentID;
     }
 
-    public void setstudentName(String studentName){
+    public void setStudentName(String studentName){
         this.studentName=studentName;
     }
 
-    public String getstudentName(){
+    public String getStudentName(){
         return studentName;
     }
 
@@ -35,7 +35,7 @@ public class Student {
         this.program=program;
     }
 
-    public String getprogram(){
+    public String getProgram(){
         return program;
     }
 
