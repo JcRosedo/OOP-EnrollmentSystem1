@@ -1,9 +1,12 @@
 package org.example;
 
 import org.example.entity.Course;
+import org.example.entity.Entity.Instructor;
+import org.example.entity.Entity.Person;
 import org.example.entity.Student;
 import org.example.Service.CourseRegistration;
 import org.example.Service.StudentRegistration;
+
 import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,21 +18,24 @@ public class Main {
         StudentRegistration studentRegistrar = new StudentRegistration();
         CourseRegistration courseRegistrar = new CourseRegistration();
 
-        Student student1 = new Student(180705, "John Doe", "Information Technology");
-        Student student2 = new Student(030306, "Jane Doe", "Information Technology");
+       // Student student2 = new Student(030306, "Jane Doe", "Information Technology");
 
-        studentRegistrar.saveStudent(student1);
-        studentRegistrar.saveStudent(student2);
+        //studentRegistrar.saveStudent(student1);
+       // studentRegistrar.saveStudent(student2);
 
-        studentRegistrar.displayAllStudent();
+       studentRegistrar.displayAllStudent();
 
-        Course cor1 = new Course(00011, "Integrative Programming", "Information Technology");
+        Course cor1 = new Course("00011", "Integrative Programming", "Information Technology");
         courseRegistrar.save(cor1);
 
         courseRegistrar.displayAll();
 
+        Instructor instructor = new Instructor();
 
+        Person person = new Person("2024373751", "Jc Rosedo");
 
+        System.out.printf("Person ID: %s \n", person.getPersonID());
+        System.out.printf("Person Name: %s", person.getPersonName());
 
     }
 }
