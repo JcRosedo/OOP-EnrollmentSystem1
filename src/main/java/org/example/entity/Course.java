@@ -7,7 +7,7 @@ public class Course extends Person {
 
     public Course() {
 
-    }
+public class Course extends Person {
 
     @Override
     public void mainTask() {
@@ -20,20 +20,14 @@ public class Course extends Person {
         this.program = program;
     }
 
-    public void setCourseID(int courseID) {
-        this.courseID = courseID;
+    public Course() {
+
     }
 
-    public int getCourseID() {
-        return courseID;
-    }
+    public Course (String PersonID, String PersonName, String program) {
+        super(PersonID, PersonName);
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
-    public String getCourseName() {
-        return courseName;
+        this.program = program;
     }
 
     public void setProgram(String Program) {
@@ -45,8 +39,8 @@ public class Course extends Person {
     }
 
     public void display() {
-        System.out.printf("Course ID: %d \n", courseID);
-        System.out.printf("Course Name: %s \n", courseName);
+        System.out.printf("Course ID: %d \n", getPersonID());
+        System.out.printf("Course Name: %s \n", getPersonName());
         System.out.printf("Program: %s \n", program);
     }
 }
