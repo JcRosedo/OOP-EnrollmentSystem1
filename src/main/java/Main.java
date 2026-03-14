@@ -4,9 +4,7 @@ import org.example.entity.Course;
 import org.example.entity.Student;
 import org.example.Service.CourseRegistration;
 import org.example.Service.StudentRegistration;
-import org.example.Service.TuitionFeePayment;
-
-import java.util.*;
+import Service.TuitionFeePayment;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.

@@ -1,11 +1,16 @@
 package org.example.entity;
 
-public class Course {
+public class Course extends Person {
     private int courseID;
     private String courseName;
     private String program;
 
     public Course() {
+
+    }
+
+    @Override
+    public void mainTask() {
 
     }
 

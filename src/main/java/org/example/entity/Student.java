@@ -1,11 +1,16 @@
 package org.example.entity;
 
-public class Student {
+public class Student extends Person {
     private int studentID;
     private String studentName;
     private String program;
 
     public Student(){
+
+    }
+
+    @Override
+    public void mainTask() {
 
     }
 
@@ -44,11 +49,6 @@ public class Student {
         System.out.printf("Student Name: %s \n", studentName);
         System.out.printf("Program: %s \n", program);
     }
-
-
-
-
-
 
 
 

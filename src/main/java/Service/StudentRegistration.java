@@ -1,11 +1,17 @@
 package org.example.Service;
+import org.example.entity.Person;
 import org.example.entity.Student;
 import java.util.*;
 
-public class StudentRegistration {
+public class StudentRegistration extends Person {
     private ArrayList<Student> studentLists = new ArrayList();
 
     public StudentRegistration(){
+
+    }
+
+    @Override
+    public void mainTask() {
 
     }
 
