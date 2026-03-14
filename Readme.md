@@ -23,3 +23,12 @@ CourseRegistration
 
 StudentRegistration
 ![img_3.png](img_3.png)
+
+Person
+![img_6.png](img_6.png)
+
+Instructor
+![img_7.png](img_7.png)
+
+Student
+![img_8.png](img_8.png)
