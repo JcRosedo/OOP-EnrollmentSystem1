@@ -4,12 +4,19 @@ import org.example.entity.Course;
 import org.example.entity.Student;
 import org.example.Service.CourseRegistration;
 import org.example.Service.StudentRegistration;
+import org.example.Service.TuitionFeePayment;
+
 import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        TuitionFeePayment tuitionFeePayment = new TuitionFeePayment();
+        System.out.println(tuitionFeePayment.calculateTuitionFee(4, 0));
+        tuitionFeePayment.makePayment(2000);
+        System.out.println(tuitionFeePayment.getBalance());
 
 
         StudentRegistration studentRegistrar = new StudentRegistration();
@@ -27,9 +34,6 @@ public class Main {
         courseRegistrar.save(cor1);
 
         courseRegistrar.displayAll();
-
-
-
 
     }
 }
