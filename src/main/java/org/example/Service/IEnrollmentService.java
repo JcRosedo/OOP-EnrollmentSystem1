@@ -6,6 +6,6 @@ import org.example.model.Student;
 import java.util.*;
 
 public interface IEnrollmentService {
-    void enrollStudentInSection(Section section, Student student);
+    void enrollstu(Section section, Student student);
     void viewDepartmentHierarchy(List<Department> allDepts);
 }

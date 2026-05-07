@@ -8,7 +8,7 @@ import java.util.*;
 public class EnrollmentService implements IEnrollmentService {
 
     @Override
-    public void enrollStudentInSection(Section section, Student student) {
+    public void enrollstu(Section section, Student student) {
         if (section.getStudentList().size() < section.getMaxCapacity()) {
             section.getStudentList().add(student);
             System.out.println("System: " + student.getPersonName() + " successfully added to " + section.getSectionName());

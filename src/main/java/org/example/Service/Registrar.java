@@ -127,7 +127,7 @@ public class Registrar {
     }
 
     public void enrollStudent(Section section, Student student) {
-        enrollmentService.enrollStudentInSection(section, student);
+        enrollmentService.enrollstu(section, student);
     }
 
     public void displaySectionDetails(String sectionName) {

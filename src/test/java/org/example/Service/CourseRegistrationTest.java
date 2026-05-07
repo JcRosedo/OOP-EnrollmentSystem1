@@ -12,7 +12,7 @@ class CourseRegistrationTest {
     void shouldUpdCourseInMainRec() {
         // 1. Arrange
         CourseRegistration catalog = new CourseRegistration();
-        Course javaCourse = new Course("CR01", "INTEPROG", "IT", 3);
+        Course javaCourse = new Course("CR01", "IT2A", "IT", 3);
         catalog.save(javaCourse);
 
         // 2. Act - locate the course and update its unit count
@@ -20,7 +20,7 @@ class CourseRegistrationTest {
         retrievedCourse.setUnits(4);
 
         // 3. Assert - verify the master record reflects the change
-        assertEquals(4, catalog.findByID("CS101").getUnits(), "The course units were not updated in the master record.");
+        assertEquals(4, catalog.findByID("CR01").getUnits(), "The course units were not updated in the master record.");
     }
 
     static class TuitionFeePaymentTest {
