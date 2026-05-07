@@ -1,6 +1,6 @@
-package org.example.entity.Entity;
+package org.example.model;
 
-public class Instructor extends Person{
+public class Instructor extends Person {
 
    private String courses;
 

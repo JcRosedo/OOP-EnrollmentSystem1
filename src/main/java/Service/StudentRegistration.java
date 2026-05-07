@@ -1,6 +1,5 @@
 package org.example.Service;
-import org.example.entity.Entity.Person;
-import org.example.entity.Student;
+import org.example.model.Person;
 
 import java.util.*;
 

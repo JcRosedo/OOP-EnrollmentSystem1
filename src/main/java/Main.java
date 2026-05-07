@@ -1,17 +1,13 @@
 package org.example;
 
-import org.example.entity.Course;
-import org.example.entity.Entity.Instructor;
-import org.example.entity.Entity.Person;
-import org.example.entity.Student;
 import org.example.Service.CourseRegistration;
 import org.example.Service.StudentRegistration;
 <<<<<<< HEAD
 import org.example.Service.TuitionFeePayment;
+import org.example.model.Instructor;
+import org.example.model.Person;
 =======
 >>>>>>> d6bbe416be862305820727aff98acf67bc03d08f
-
-import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -41,7 +37,7 @@ public class Main {
 
 <<<<<<< HEAD
 =======
-        Instructor instructor = new Instructor();
+                Instructor instructor = new Instructor();
 
         Person person = new Person("2024373751", "Jc Rosedo");
 
