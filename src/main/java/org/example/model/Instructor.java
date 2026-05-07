@@ -2,23 +2,32 @@ package org.example.model;
 
 public class Instructor extends Person {
 
-   private String courses;
+    private String courses;
 
-    public Instructor(){
-
-            this.courses = courses;
-
-    }
-    public Instructor(String personID, String personName, String courses){
-        super(personID, personName);
-    }
-
-    public void setcourses(String courses) {
-
+    public Instructor(String PersonName, String PersonID, String courses) {
+        super(PersonName, PersonID);
         this.courses = courses;
     }
 
-    public String getcourses() {
+    public String getCourse() {
         return courses;
+    }
+
+    public void setCourses(String courses) {
+        this.courses = courses;
+    }
+
+    @Override
+    public void mainTask() {
+        System.out.println(getPersonName() + " is a faculty member handling: " + courses);
+    }
+
+    @Override
+    public String toString() {
+        return "Instructor{" +
+                "Name='" + getPersonName() + '\'' +
+                ", ID='" + getPersonID() + '\'' +
+                ", Courses='" + courses + '\'' +
+                '}';
     }
 }
